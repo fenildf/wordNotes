@@ -49,7 +49,7 @@ export default class WordRow extends Component {
       const index = this.props.index;
       const newItem = {word,meaning,familiarity:newNum,date};
       this.props.updateHandler(newItem,index);
-      this.props.slideUp('4月12号','修改成功',()=>{this.props.slideDown('修改成功')})
+      this.props.slideUp('4月7号','修改成功',()=>{this.props.slideDown('修改成功')})
     }
   }
   //表单绑定state
@@ -80,7 +80,7 @@ export default class WordRow extends Component {
   delete = () =>{
     const index = this.props.index;
     this.props.deleteHandler(index);
-    this.props.slideUp('4月12号','删除成功',()=>{this.props.slideDown('删除成功')})
+    this.props.slideUp('4月7号','删除成功',()=>{this.props.slideDown('删除成功')})
     this.close();
   }
   onPress = (familiarity) => {
@@ -89,7 +89,7 @@ export default class WordRow extends Component {
     const index = this.props.index;
     const newItem = {word,meaning,familiarity,date};
     this.props.updateHandler(newItem,index);
-    this.props.slideUp('4月12号','修改成功',()=>{this.props.slideDown('修改成功')})
+    this.props.slideUp('4月7号','修改成功',()=>{this.props.slideDown('修改成功')})
     this.close();
   }
   render() {

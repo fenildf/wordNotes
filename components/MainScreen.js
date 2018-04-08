@@ -39,7 +39,7 @@ export default class MainScreen extends React.Component {
 
   slideDown = (view) =>{
     //设置上层和下层文字
-    this.setState({wordUp:'4月12号',wordDown:view});
+    this.setState({wordUp:'4月7号',wordDown:view});
     //向下滑动动画
     this.state.animation.setValue(-30);
     Animated.timing(this.state.animation, {toValue: 0,duration:400,delay:400}).start();
