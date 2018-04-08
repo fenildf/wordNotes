@@ -7,8 +7,8 @@ import IconButton from './iconButtonComponent'
 
 export default class addWordForm extends Component {
   state = {
-    word : 'AA' ,
-    meaning : 'SFSFSFSF',
+    word : '' ,
+    meaning : '',
     myHeight: 0,
     isOpen:false,
     animation: new Animated.Value(0),
